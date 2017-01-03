@@ -7,7 +7,7 @@ all: ubberjar
 
 # Build ubber jar 
 ubberjar:
-	sbt assembly
+	bin/resolve-sbt assembly
 
 test1:
 	java -jar ./target/scala-2.11/Clip-assembly-$(VERSION).jar --name clipboard
@@ -25,4 +25,4 @@ release:
 	cd ./build && git add Clip.jar && git commit -m "Release"$(VERSION)
 
 clean:
-	sbt clean 
+	bin/resolve-sbt clean
