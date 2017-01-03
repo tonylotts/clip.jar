@@ -2,6 +2,7 @@
 *.png
 *.class
 *.bin
+!bin/sbt-launch.jar
 
 lib/*
 /clipboard.scala.back
